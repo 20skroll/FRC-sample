@@ -11,7 +11,8 @@ class MyRobot(wpilib.IterativeRobot):
         self.myRobot.setExpiration(0.1)
 
         # joystick #0
-        self.stick = wpilib.XboxController(0)
+
+        self.stick = wpilib.Joystick(0)
 
     def teleopInit(self):
         """Executed at the start of teleop mode"""
